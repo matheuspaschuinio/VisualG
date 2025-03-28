@@ -8,11 +8,16 @@ Var
    parcela, parcela_total: real
 
 Inicio
+   repita
+
+   escreval("----------------------------------------")
    escreval("Bem vindo!")
    escreval("--- Menu de Navegação ---")
    escreval("1 - Requisitos para contratar empréstimo")
    escreval("2 - Fazer empréstimo")
    escreval("3 - Mostrar informações de contato")
+   escreval("4 - Parar execução e sair")
+   escreval("----------------------------------------")
 
    escreval("Qual opção você deseja acessar?: ")
    leia(numNavegacao)
@@ -94,9 +99,15 @@ Inicio
       caso 3
            escreval("Informações de contato: ")
            escreval("Ligue 0028922")
+           
+      caso 4
+           escreval("Fim da execução!")
+           
       outrocaso
            escreval("Erro! Digite um número valido para navegação!")
 
     fimescolha
+    
+    até (numNavegacao = 4)
 
 Fimalgoritmo
